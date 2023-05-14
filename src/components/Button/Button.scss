@@ -5,12 +5,11 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 100px;
+  max-width: 100px;
   height: 34px;
   border: 0 $color-btn-bgr;
   background-color: $color-btn-bgr;
   border-radius: 40px;
-  margin: 0 auto;
 
   font-weight: bold;
   font-size: 16px;
