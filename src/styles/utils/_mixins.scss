@@ -33,6 +33,7 @@
 
 @mixin container {
   margin: 0 auto;
+  min-width: 360px;
   max-width: 1020px;
   padding: 0 16px;
 
