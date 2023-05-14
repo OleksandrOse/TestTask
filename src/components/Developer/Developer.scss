@@ -15,11 +15,13 @@
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 24px;
+    margin: 0 auto;
     margin-bottom: 20px;
+
   }
 
   &__photo {
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
     width: 70px;
     height: 70px;
     border-radius: 50%;
