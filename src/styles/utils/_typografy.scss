@@ -1,0 +1,8 @@
+h1 {
+  @extend %h1;
+}
+
+
+h3, a, p, div, label {
+  @extend %Ag
+}

@@ -1,0 +1,57 @@
+@import "../../styles/utils";
+
+.new-user {
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include onDekstop {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__form {
+    min-width: 328px;
+    max-width: 380px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__distance {
+    margin: 0;
+    height: 50px;
+  }
+}
+
+.help {
+  display: block;
+  font-size: 0.75rem;
+  margin: 0;
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.is-danger {
+  color: #f14668;
+  border-color: #f14668;
+}
+
+.is-submit {
+  color: #008000;
+}

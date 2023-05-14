@@ -1,0 +1,45 @@
+@import "../../styles/utils";
+
+.users {
+  margin-top: 140px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include onDekstop {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+    }
+
+    @include onDekstop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 28px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include onDekstop {
+      margin-bottom: 0;
+    }
+  }
+}

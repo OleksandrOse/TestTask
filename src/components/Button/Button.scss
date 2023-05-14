@@ -1,0 +1,33 @@
+@import "../../styles/utils";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100px;
+  height: 34px;
+  border: 0 $color-btn-bgr;
+  background-color: $color-btn-bgr;
+  border-radius: 40px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: none;
+  color: $color-black;
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &--disabled {
+    color: $color-white;
+    background-color: $color-btn-disabled;
+    border-color: $color-btn-disabled;
+  }
+
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+}

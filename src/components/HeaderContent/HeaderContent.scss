@@ -1,0 +1,43 @@
+@import "../../styles/utils";
+
+.header__content {
+  height: calc(100vh - #{$headerHeigth});
+  width: 100%;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../images/header.png);
+
+  &__container {
+    @include container;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__title {
+    margin: 0 0 22px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: $color-white;
+  }
+
+  &__paragraf {
+    margin: 0 0 36px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $color-white;
+  }
+}
