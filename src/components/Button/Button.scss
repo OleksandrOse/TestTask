@@ -24,9 +24,13 @@
     color: $color-white;
     background-color: $color-btn-disabled;
     border-color: $color-btn-disabled;
+
+    &:hover {
+      background-color: $color-btn-hover;
+    }
   }
 
   &:hover {
-    background-color: $color-btn-hover;
+    background-color: $color-btn-disabled;
   }
 }
