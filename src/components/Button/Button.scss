@@ -5,12 +5,11 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 100px;
-  height: 34px;
   border: 0 $color-btn-bgr;
   background-color: $color-btn-bgr;
   border-radius: 40px;
-  margin: 0 auto;
+  margin: auto;
+  padding: 4px 18px;
 
   font-weight: bold;
   font-size: 16px;
@@ -25,9 +24,13 @@
     color: $color-white;
     background-color: $color-btn-disabled;
     border-color: $color-btn-disabled;
+
+    &:hover {
+      background-color: $color-btn-hover;
+    }
   }
 
   &:hover {
-    background-color: $color-btn-hover;
+    background-color: $color-btn-disabled;
   }
 }
